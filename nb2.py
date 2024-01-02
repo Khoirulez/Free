@@ -32,12 +32,10 @@ try:
 except Exception as e:
     exit(e)
 ###----------[ USER AGENT ]----------###
-for t in range(10000):
-	rr = random.randint
-	andro=random.choice(['8','9','10','11','12'])
-	rfn=f'Mozilla/5.0 (Linux; Android {andro}; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(110,120))}.0.0.0 Mobile Safari/537.36'
-	uaku2 = random.choice([rfn])
-	ugen.append(uaku2)
+for mek in range(1000):
+ device2 = str(random.choice(["CPH"]))
+ ua2 = f"Mozilla/5.0 (Linux; Android {str(random.randint(3,15))}; {device2}{str(random.randint(1000,10000))}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(random.randint(40,114))}.0.{str(random.randint(2200,4200))}.{str(random.randint(40,140))} Mobile Safari/537.36"
+ ugen.append(ua2)
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,tokenku,uid= [],[],0,0,0,[],[],[],[],[]
 cokbrut=[]
